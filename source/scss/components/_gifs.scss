@@ -1,0 +1,109 @@
+.sg-gif-page__heading {
+  text-transform: lowercase;
+  font-weight: $font-weight-normal;
+  font-size: $font-size-lg;
+}
+
+.sg-gif-thumbnail {
+  &:hover img {
+    opacity: $thumbnail-link-hover-opacity;
+  }
+}
+
+.sg-gif-single {
+  
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-gap: $grid-gutter-width;
+    justify-items: center;
+    margin-bottom: $spacer;
+  }
+  
+  &__grid > * {
+    display: inline-block;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  &__prev-gif,
+  &__next-gif {
+    text-align: center;
+    text-transform: lowercase;
+    font-size: $font-size-sm;
+    // font-weight: $font-weight-bold;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-row-gap: $grid-gutter-width/4;
+
+    img {
+      border: 2px solid transparent;
+    }
+
+    @include hover-focus-active {
+      img {
+        opacity: $thumbnail-link-hover-opacity;
+      }
+    }
+  }
+
+  &__gallery-link{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    text-align: center;
+    color: $black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: lowercase;
+
+    & > span {
+      font-size: $font-size-sm;
+      margin-top: .25rem;
+    }
+  }
+
+  &__social-share {
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    
+    & > h2 {
+      margin-bottom: 1rem;
+      margin-top: 2rem;
+      font-weight: $font-weight-normal;
+    }
+    
+    & .sg-share-social-links {
+      margin-bottom: 1rem;
+    }
+    
+    & .sg-share-social-links > a > img {
+      margin-left: 4px;
+      margin-right: 4px;
+    }
+
+    & > .sg-share-url {
+      position: relative;
+      display: inline-block;
+      border-radius: $border-radius;
+      background: $gray-200;
+    }
+    
+    & .sg-share-url__url {
+      padding: $input-btn-padding-y $input-btn-padding-x;
+      display: inline-block;
+    }
+
+    & > .sg-share-url > button {
+      font-size: $font-size-sm;
+      color: $gray-500;
+      text-transform: lowercase;
+    }
+
+    & > .sg-share-url > button:hover {
+      color: $primary;
+      text-decoration: none;
+    }
+  }
+}

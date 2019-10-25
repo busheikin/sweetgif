@@ -1,0 +1,21 @@
+.sg-page-header {
+
+  & > .container {
+    padding-bottom: 0;
+  }
+
+  &__title {
+    flex-grow: 1;
+  }
+
+  &__title > h1 {
+    margin-bottom: 0;
+    line-height: 1;
+  }
+
+  &__group {
+    display: flex;
+    justify-content: space-between;
+    justify-items: baseline;
+  }
+}

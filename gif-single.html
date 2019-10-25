@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="this is pug html5 boilerplate">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <!--Disable tap highlight on IE-->
+    <meta name="msapplication-tap-highlight" content="no">
+    <!--Web Application Manifest-->
+    <link rel="manifest" href="manifest.json">
+    <!--Add to homescreen for Chrome on Android-->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="my app">
+    <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
+    <!--Add to homescreen for Safari on iOS-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="my app">
+    <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
+    <!--Tile icon for Win8 (144x144 + tile color)-->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="maroon">
+    <!--Color the status bar on mobile devices-->
+    <meta name="theme-color" content="maroon">
+    <!--opengraph-->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:title">
+    <meta property="og:image" content="">
+    <meta property="og:description" content="this is pug html5 boilerplate">
+    <meta property="og:site_name" content="my app">
+    <meta property="og:locale" content="ru_RU">
+    <!--CSS framework-->
+    <link rel="stylesheet" href="style.css">
+    <!--fontawesome-->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <!--if IEscript(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js')
+    -->
+  </head>
+  <body>
+    <section class="sg-page-header">
+      <div class="navbar placeholder">
+        <p>Navbar</p>
+      </div>
+      <div class="container sg-page-header__group">
+        <div class="sg-page-header__title">
+          <h1 class="text-center"><span class="sg-gif-page__heading">A sweetgif from</span><br><a class="sg-gif-page__booth-name" href="booth-gallery.html">Daniel's Bar Mitzvah</a></h1>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <div class="sg-gif-single__grid"><a class="sg-gif-single__prev-gif sg-alt-link-style" href="#"><img class="rounded" src="http://placehold.it/400x300" alt=""/><span><i class="fas fa-xs fa-arrow-left mr-1"></i>Previous</span></a>
+        <div class="sg-gif-single__main-gif"><img class="rounded" src="http://placehold.it/800x600" alt=""></div><a class="sg-gif-single__next-gif sg-alt-link-style" href="#"><img class="rounded" src="http://placehold.it/400x300" alt=""/><span>Next<i class="fas fa-xs fa-arrow-right ml-1"></i></span></a><a class="sg-gif-single__gallery-link sg-alt-link-style" href=""><i class="fas fa-th fa-2x"></i><span>Gallery</span></a>
+        <div class="sg-gif-single__social-share">
+          <h2>Share this work of art:</h2>
+          <div class="sg-share-social-links"><a href="#"><img src="http://placehold.it/40x40" alt=""></a><a href="#"><img src="http://placehold.it/40x40" alt=""></a><a href="#"><img src="http://placehold.it/40x40" alt=""></a></div>
+          <div class="sg-share-url">
+            <div class="sg-share-url__url"><span>https://sweetgif.com/whatever</span></div>
+            <button class="btn btn-link"><i class="fas fa-copy mr-1"></i><span>Copy</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sg-footer">
+      <div class="container">
+        <div class="sg-footer--grid">
+          <ul class="sg-footer--list">
+            <li><a href="#">About</a></li>
+            <li><a href="#">How it Works</a></li>
+            <li><a href="/booths-index.html">Booths</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+          <ul class="sg-footer--list">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Yandex.Metrika counter-->
+    <script>
+      (function (d, w, c) {
+          (w[c] = w[c] || []).push(function () {
+              try {
+                  w.yaCounter12345678 = new Ya.Metrika({
+                      id: 12345678,
+                      clickmap: true,
+                      trackLinks: true,
+                      accurateTrackBounce: true,
+                      webvisor: true,
+                      trackHash: true
+                  });
+              } catch (e) {
+              }
+          });
+      
+          var n = d.getElementsByTagName("script")[0],
+              s = d.createElement("script"),
+              f = function () {
+                  n.parentNode.insertBefore(s, n);
+              };
+          s.type = "text/javascript";
+          s.async = true;
+          s.src = "https://mc.yandex.ru/metrika/watch.js";
+      
+          if (w.opera == "[object Opera]") {
+              d.addEventListener("DOMContentLoaded", f, false);
+          } else {
+              f();
+          }
+      })
+      (document, window, "yandex_metrika_callbacks"
+      )
+      ;
+    </script>
+    <noscript>
+      <div><img src="https://mc.yandex.ru/watch/12345678" style="position:absolute; left:-9999px;" alt=""></div>
+    </noscript>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+.placeholder {
+  border: 1px dashed blue;
+  background: rgba(0, 0, 255,.3);
+  padding: 1rem;
+}
+
+a.sg-alt-link-style {
+  text-decoration: none;
+  color: $black;
+  @include hover-focus-active {
+    color: $primary;
+  }
+}

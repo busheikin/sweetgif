@@ -1,0 +1,18 @@
+h1 {
+  font-weight: $font-weight-bold;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  padding-top: $spacer*4;
+  padding-bottom: $spacer*4;
+}
+
+a.disabled {
+  color: $gray-300;
+  cursor: not-allowed;
+  pointer-events: none;
+}

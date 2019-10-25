@@ -1,0 +1,122 @@
+- var appName = "my app";
+- var description = "this is pug html5 boilerplate";
+- var statusBarColor = "maroon";
+- var metrikaId = 12345678;
+- var cssPath = "style.css";
+- var url = "";
+- var OGimage = "";
+- var fontAwesome = true
+- var n = 0
+
+mixin thumbnail
+  img.rounded(src="http://placehold.it/400x300" alt="")
+
+mixin thumbnailLink(url="gif-single.html")
+  .sg-gif-thumbnail
+    a(href=url)
+      +thumbnail
+
+mixin boothCard(title='Title', username='Username', isLive=false)
+  a(href="booth-gallery.html").sg-booth-card
+    .sg-booth-card__thumbnail
+      +thumbnail
+      p.sg-booth-card__live-tag Live
+    .sg-booth-card__text
+      h3.sg-booth-card__title= title
+      p.sg-booth-card__username= username
+    .sg-booth-card__icon
+      i(class="fas fa-lock fa-xs")
+
+
+doctype html
+html(lang="ru")
+    head
+        meta(charset="utf-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="description", content=description)
+        meta(name="viewport", content="width=device-width, initial-scale=1")
+        title= title
+
+        //Disable tap highlight on IE
+        meta(name="msapplication-tap-highlight", content="no")
+
+        //Web Application Manifest
+        link(rel="manifest", href="manifest.json")
+
+        //Add to homescreen for Chrome on Android
+        meta(name="mobile-web-app-capable", content="yes")
+        meta(name="application-name", content=appName)
+        link(rel="icon", sizes="192x192", href="images/touch/chrome-touch-icon-192x192.png")
+
+        //Add to homescreen for Safari on iOS
+        meta(name="apple-mobile-web-app-capable", content="yes")
+        meta(name="apple-mobile-web-app-status-bar-style", content="black")
+        meta(name="apple-mobile-web-app-title", content=appName)
+        link(rel="apple-touch-icon", href="images/touch/apple-touch-icon.png")
+
+        //Tile icon for Win8 (144x144 + tile color)
+        meta(name="msapplication-TileImage", content="images/touch/ms-touch-icon-144x144-precomposed.png")
+        meta(name="msapplication-TileColor", content=statusBarColor)
+
+        //Color the status bar on mobile devices
+        meta(name="theme-color", content=statusBarColor)
+
+        //opengraph
+        meta(property='og:type', content='website')
+        meta(property='og:url', content= url)
+        meta(property='og:title', content= title)
+        meta(property='og:image', content= OGimage)
+        meta(property='og:description', content= description)
+        meta(property='og:site_name', content= appName)
+        meta(property='og:locale', content='ru_RU')
+
+        //CSS framework
+        link(rel="stylesheet", href=cssPath)
+
+        //fontawesome
+        if fontAwesome
+            script(defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js")
+
+        //if IE
+          script(type='text/javascript', src='https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js')
+    body
+      block content
+      
+      // Yandex.Metrika counter
+      script.
+          (function (d, w, c) {
+              (w[c] = w[c] || []).push(function () {
+                  try {
+                      w.yaCounter!{JSON.stringify(metrikaId)} = new Ya.Metrika({
+                          id: !{JSON.stringify(metrikaId)},
+                          clickmap: true,
+                          trackLinks: true,
+                          accurateTrackBounce: true,
+                          webvisor: true,
+                          trackHash: true
+                      });
+                  } catch (e) {
+                  }
+              });
+
+              var n = d.getElementsByTagName("script")[0],
+                  s = d.createElement("script"),
+                  f = function () {
+                      n.parentNode.insertBefore(s, n);
+                  };
+              s.type = "text/javascript";
+              s.async = true;
+              s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+              if (w.opera == "[object Opera]") {
+                  d.addEventListener("DOMContentLoaded", f, false);
+              } else {
+                  f();
+              }
+          })
+          (document, window, "yandex_metrika_callbacks"
+          )
+          ;
+      noscript
+          div: img(src="https://mc.yandex.ru/watch/" + metrikaId, style="position:absolute; left:-9999px;", alt="")
+

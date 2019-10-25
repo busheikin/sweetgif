@@ -1,0 +1,24 @@
+// Pagination styles will override or add to native Bootstrap styles
+
+.sg-pagination {
+  text-align: center;
+
+  nav {
+    display: inline-block;
+  }
+
+  &-link--prev,
+  &-link--next {
+    position: relative;
+    top: -3px;
+  }
+}
+
+.pagination {
+  font-size: $h1-font-size;
+
+  & ul {
+    display: flex;
+    align-items: center;
+  }
+}

@@ -1,0 +1,18 @@
+.sg-footer {
+  background: $gray-100;
+
+  &--grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-column-gap: $grid-gutter-width;
+  }
+
+  &--list {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  &--list a {
+    color: $black;
+  }
+}

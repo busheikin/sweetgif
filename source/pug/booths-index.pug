@@ -1,0 +1,28 @@
+
+extends _page-template.pug
+
+block pageTitle
+  h1 Booths
+
+block pageAction
+  .sg-page-header__search
+    i(class="fas fa-2x fa-search")
+
+block content
+  .sg-booth-card-grid
+    +boothCard(isLive=true)
+    +boothCard
+    +boothCard
+    +boothCard
+    
+    +boothCard
+    +boothCard
+    +boothCard
+    +boothCard
+    
+    +boothCard
+    +boothCard
+    +boothCard
+    +boothCard
+
+  include includes/_pagination.pug

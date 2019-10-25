@@ -1,0 +1,65 @@
+.sg-booth-card-grid {
+  display: grid;
+  grid-gap: $grid-gutter-width;
+
+  @include media-breakpoint-up(sm) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  & + .sg-pagination {
+    margin-top: $grid-gutter-width*2;
+  }
+}
+
+.sg-booth-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+
+  &__live-tag {
+    position: absolute;
+    top: 0;
+    left: $spacer;
+    background: $yellow;
+    color: $black;
+    text-transform: uppercase;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: .125rem 1.25rem;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-sm;
+  }
+
+  @include hover-focus-active {
+    text-decoration: none;
+
+    & img {
+      opacity: $thumbnail-link-hover-opacity;
+    }
+  }
+
+  &__thumbnail {
+    flex-basis: 100%;
+    padding-bottom: $grid-gutter-width/4;
+  }
+  
+  &__title {
+    font-size: $font-size-base;
+    font-weight: $font-weight-bold;
+    margin-bottom: 0;
+    color: $black;
+  }
+  
+  &__username {
+    color: $gray-500;
+    font-size: $font-size-sm;
+  }
+
+  &__icon {
+    padding-left: $spacer;
+    line-height: 1;
+    font-size: $font-size-sm;
+    color: transparentize($black, .5)
+  }
+}

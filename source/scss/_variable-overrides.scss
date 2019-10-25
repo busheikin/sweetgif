@@ -1,0 +1,46 @@
+// Unique
+
+$thumbnail-link-hover-opacity:      0.8;
+
+
+// Overriding bootstrap
+
+
+$white:    #fff;
+$gray-100: #f9f9f9;
+$gray-200: #ececec;
+$gray-300: #e3e2e2;
+$gray-400: #d4d4d4;
+$gray-500: #b5b5b5;
+$gray-600: #6c6c6c;
+$gray-700: #505050;
+$gray-800: #3a3a3a;
+$gray-900: #252525;
+$black:    #000;
+
+$yellow:                            #F9E804;
+$primary:                           #FF2257;
+$border-radius:                     6px;
+$grid-gutter-width:                 32px;
+$container-max-widths: (sm: 540px, md: 720px, lg: 928px, xl: 1024px );
+
+$box-shadow:                        0 .5rem 1rem rgba($black, .15) !default;
+
+
+// Buttons
+
+$btn-transition:                    none;
+
+// Pagination
+
+$pagination-color:                  $gray-500;
+$pagination-bg:                     transparent;
+$pagination-border-width:           0;
+$pagination-border-color:           transparent;
+$pagination-active-color:           #000000;
+
+$pagination-hover-bg:               transparent;
+$pagination-active-color:           #000000;
+$pagination-active-bg:              transparent;
+$pagination-disabled-bg:            transparent;
+

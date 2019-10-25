@@ -1,0 +1,41 @@
+
+extends _page-template.pug
+
+block pageTitle
+  h1.text-center
+    span.sg-gif-page__heading A sweetgif from
+    br
+    a.sg-gif-page__booth-name(href="booth-gallery.html") Daniel's Bar Mitzvah
+
+block content
+  .sg-gif-single__grid
+    a.sg-gif-single__prev-gif.sg-alt-link-style(href="#")
+        +thumbnail
+        span
+          i.fas.fa-xs.fa-arrow-left.mr-1
+          | Previous
+    .sg-gif-single__main-gif
+      img.rounded(src="http://placehold.it/800x600" alt="")
+    a.sg-gif-single__next-gif.sg-alt-link-style(href="#")
+        +thumbnail
+        span
+          | Next
+          i.fas.fa-xs.fa-arrow-right.ml-1
+    a.sg-gif-single__gallery-link.sg-alt-link-style(href="")
+      i.fas.fa-th.fa-2x
+      span Gallery
+    .sg-gif-single__social-share
+      h2 Share this work of art:
+      .sg-share-social-links
+        a(href="#")
+          img(src="http://placehold.it/40x40", alt="")
+        a(href="#")
+          img(src="http://placehold.it/40x40", alt="")
+        a(href="#")
+          img(src="http://placehold.it/40x40", alt="")
+      .sg-share-url
+        .sg-share-url__url
+          span https://sweetgif.com/whatever
+        button.btn.btn-link
+          i.fas.fa-copy.mr-1
+          span Copy
