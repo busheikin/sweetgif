@@ -4,10 +4,29 @@
   padding: 1rem;
 }
 
-a.sg-alt-link-style {
+.sg-alt-link-style {
   text-decoration: none;
   color: $black;
   @include hover-focus-active {
     color: $primary;
   }
+}
+
+$bg-colors: (
+  yellow : $yellow,
+  dark-blue : $dark-blue,
+);
+
+@each $class, $bg-color in $bg-colors {
+  .bg-#{$class} {
+    background-color: $bg-color;
+  }
+}
+
+.sg-full-page-div {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }

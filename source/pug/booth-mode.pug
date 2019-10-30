@@ -2,17 +2,24 @@
 extends _page-template-naked.pug
 
 block content
-  .sg-booth-background
-  .sg-booth-actions
-    button.btn.btn-light.btn-lg 
-      i.fas.fa-question.mr-3
-      | Help
-    button.btn.btn-light.btn-lg 
-      i.fas.fa-cog.mr-3
-      | Settings
-    button.btn.btn-light.btn-lg 
-      i.fas.fa-th.mr-3
-      | Gallery
-  .sg-booth__start-button
-    button.btn.btn-primary.btn-lg start
-  
+  .sg-booth-container
+    .sg-booth-background
+    .sg-booth-actions
+      button.btn.btn-light.btn-lg 
+        i.fas.fa-question.mr-3
+        | Help
+      button.btn.btn-light.btn-lg 
+        i.fas.fa-cog.mr-3
+        | Settings
+      button.btn.btn-light.btn-lg 
+        i.fas.fa-th.mr-3
+        | Gallery
+    .sg-booth-instruction
+      p.h1.text-center start moving!
+    .sg-booth-counter
+      span 3
+    .sg-booth__start-button
+      button.btn.btn-primary.btn-lg start
+    .sg-booth-timer
+      .sg-booth-timer__fill
+    

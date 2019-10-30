@@ -13,7 +13,7 @@
 //  @import "bootstrap/code";
 @import "bootstrap/grid";
 //  @import "bootstrap/tables";
-//  @import "bootstrap/forms";
+@import "bootstrap/forms";
 @import "bootstrap/buttons";
 @import "bootstrap/transitions";
 @import "bootstrap/dropdown";
@@ -41,14 +41,20 @@
  @import "bootstrap/utilities";
 //  @import "bootstrap/print";
 
+//
+// Unique styles and bootstrap-overriding styles
+// Generally unique classes will be prepended with 'sg-' for easy ID
+
 @import "globals/elements";
 @import "globals/page";
 @import "globals/footer";
 
 @import "components/booth-cards";
 @import "components/gifs";
+@import "components/navbar";
 @import "components/pagination";
 
 @import "pages/booth";
+@import "pages/home";
 
 @import "utils/utils"

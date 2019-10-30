@@ -40,19 +40,91 @@
     -->
   </head>
   <body>
-    <section class="sg-page-header">
-      <div class="navbar placeholder">
-        <p>Navbar</p>
+    <section>
+      <nav class="navbar navbar-light"><a class="navbar-brand" href="/"><img src="build/images/logo.svg" alt="sweetgif"></a>
+        <button class="btn sg-alt-link-style" type="button" data-toggle="collapse" data-target="#navMenu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <div class="sg-navbar-toggle__icon"><i class="fas fa-bars fa-2x"></i></div>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <button class="btn btn-link sg-navbar-close-button" type="button" data-toggle="collapse" data-target="#navMenu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="sg-navbar-toggle__icon"><i class="fas fa-times fa-2x"></i></div>
+          </button>
+          <ul class="navbar-nav">
+            <li class="nav-item"><a href="#">home</a></li>
+            <li class="nav-item"><a href="#">about</a></li>
+            <li class="nav-item"><a href="#">link</a></li>
+            <li class="nav-item"></li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+    <section>
+      <div class="container text-center pt-5">
+        <div class="sg-homepage__main-image sg-fancy-frame"><img class="rounded" src="http://placehold.it/400x300" alt=""></div>
+        <div class="sg-squiggle"><img src="build/images/squiggle.svg" alt=""></div>
+        <p class="sg-homepage__hed">move around</p>
+        <p class="sg-homepage__dek">sweetgif helps you capture your weird, wonderful moments.</p>
       </div>
-      <div class="container sg-page-header__group">
-        <div class="sg-page-header__title">
-          <h1>My Cool page</h1>
+    </section>
+    <section class="sg-homepage-intro">
+      <div class="container sg-homepage-intro__grid">
+        <div class="sg-homepage-intro__text">
+          <h1>sweetgif is a digital photobooth that makes sweet GIFs.</h1>
+          <p>sweetgif takes pictures as you move around, and then instantly stiches them together to make a GIF.</p><a class="btn btn-outline-dark btn-lg mr-2 mb-1" href="how-it-works.html">how it works</a><a class="btn btn-dark btn-lg mb-1" href="booths-index.html">see booths</a>
+        </div>
+        <div class="sg-homepage-intro__image">
+          <div class="sg-fancy-frame"><img class="rounded" src="http://placehold.it/400x300" alt=""></div>
         </div>
       </div>
     </section>
-    <div class="container">
-      <p>what the fuck is up</p>
-    </div>
+    <section class="bg-dark-blue">
+      <div class="container">
+        <p class="h1 text-center text-white">booths on right now</p>
+        <div class="sg-squiggle mb-5"><img src="build/images/squiggle.svg" alt=""></div>
+        <div class="row">
+          <div class="col-md-3 col-sm-6 mb-4"><a class="sg-booth-card sg-booth-card--inverted" href="booth-gallery.html">
+              <div class="sg-booth-card__thumbnail"><img class="rounded" src="http://placehold.it/400x300" alt=""/>
+                <p class="sg-booth-card__live-tag">Live</p>
+              </div>
+              <div class="sg-booth-card__text">
+                <h3 class="sg-booth-card__title">Title</h3>
+                <p class="sg-booth-card__username">Username</p>
+              </div>
+              <div class="sg-booth-card__icon"><i class="fas fa-lock fa-xs"></i></div></a>
+          </div>
+          <div class="col-md-3 col-sm-6 mb-4"><a class="sg-booth-card sg-booth-card--inverted" href="booth-gallery.html">
+              <div class="sg-booth-card__thumbnail"><img class="rounded" src="http://placehold.it/400x300" alt=""/>
+                <p class="sg-booth-card__live-tag">Live</p>
+              </div>
+              <div class="sg-booth-card__text">
+                <h3 class="sg-booth-card__title">Title</h3>
+                <p class="sg-booth-card__username">Username</p>
+              </div>
+              <div class="sg-booth-card__icon"><i class="fas fa-lock fa-xs"></i></div></a>
+          </div>
+          <div class="col-md-3 col-sm-6 mb-4"><a class="sg-booth-card sg-booth-card--inverted" href="booth-gallery.html">
+              <div class="sg-booth-card__thumbnail"><img class="rounded" src="http://placehold.it/400x300" alt=""/>
+                <p class="sg-booth-card__live-tag">Live</p>
+              </div>
+              <div class="sg-booth-card__text">
+                <h3 class="sg-booth-card__title">Title</h3>
+                <p class="sg-booth-card__username">Username</p>
+              </div>
+              <div class="sg-booth-card__icon"><i class="fas fa-lock fa-xs"></i></div></a>
+          </div>
+          <div class="col-md-3 col-sm-6 mb-4"><a class="sg-booth-card sg-booth-card--inverted" href="booth-gallery.html">
+              <div class="sg-booth-card__thumbnail"><img class="rounded" src="http://placehold.it/400x300" alt=""/>
+                <p class="sg-booth-card__live-tag">Live</p>
+              </div>
+              <div class="sg-booth-card__text">
+                <h3 class="sg-booth-card__title">Title</h3>
+                <p class="sg-booth-card__username">Username</p>
+              </div>
+              <div class="sg-booth-card__icon"><i class="fas fa-lock fa-xs"></i></div></a>
+          </div>
+        </div>
+      </div>
+    </section>
     <div class="sg-footer">
       <div class="container">
         <div class="sg-footer--grid">
@@ -69,44 +141,8 @@
         </div>
       </div>
     </div>
-    <!-- Yandex.Metrika counter-->
-    <script>
-      (function (d, w, c) {
-          (w[c] = w[c] || []).push(function () {
-              try {
-                  w.yaCounter12345678 = new Ya.Metrika({
-                      id: 12345678,
-                      clickmap: true,
-                      trackLinks: true,
-                      accurateTrackBounce: true,
-                      webvisor: true,
-                      trackHash: true
-                  });
-              } catch (e) {
-              }
-          });
-      
-          var n = d.getElementsByTagName("script")[0],
-              s = d.createElement("script"),
-              f = function () {
-                  n.parentNode.insertBefore(s, n);
-              };
-          s.type = "text/javascript";
-          s.async = true;
-          s.src = "https://mc.yandex.ru/metrika/watch.js";
-      
-          if (w.opera == "[object Opera]") {
-              d.addEventListener("DOMContentLoaded", f, false);
-          } else {
-              f();
-          }
-      })
-      (document, window, "yandex_metrika_callbacks"
-      )
-      ;
-    </script>
-    <noscript>
-      <div><img src="https://mc.yandex.ru/watch/12345678" style="position:absolute; left:-9999px;" alt=""></div>
-    </noscript>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>

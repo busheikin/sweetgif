@@ -1,0 +1,39 @@
+.sg-homepage__hed {
+  font-family: $headings-font-family;
+  font-size: 4rem;
+  line-height: $headings-line-height;
+}
+
+.sg-homepage__dek {
+  font-size: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1;
+}
+
+.sg-homepage-intro{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background: $yellow;
+  &__grid {
+    display: grid;
+    grid-gap: $grid-gutter-width;
+
+    @include media-breakpoint-up(md){
+      grid-template-columns: 2fr 1fr;
+    }
+  }
+
+  &__text {
+    @include media-breakpoint-up(lg){
+
+    }
+  }
+
+  &__image {
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
+  }
+}

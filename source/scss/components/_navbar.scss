@@ -1,0 +1,47 @@
+.navbar-brand img {
+  height: 60px;
+}
+
+.navbar-collapse {
+  background: $dark-blue;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;  
+  height: 100% !important;
+  opacity: 0;
+  
+  &.collapse.collapsing,
+  &.collapse {
+    opacity: 0; 
+    transition: opacity 0.1s ease;
+  }
+
+  &.collapse.show {
+    opacity: .98;
+  }
+
+}
+
+.navbar-nav {
+  height: 100%;
+  justify-content: center;
+}
+
+.nav-item {
+  font-family: $headings-font-family;
+  font-size: $h2-font-size;
+  font-weight: $font-weight-bold;
+  text-align: center;
+
+  a{
+    color: $primary;
+  }
+}
+
+.sg-navbar-close-button {
+  float: right;
+  margin-top: $navbar-padding-y;
+  margin-right: $navbar-padding-x;
+}

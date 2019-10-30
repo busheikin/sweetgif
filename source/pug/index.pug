@@ -1,8 +1,37 @@
 
 extends _page-template.pug
 
-block pageTitle
-  h1 My Cool page
-
 block content
-  p what the fuck is up
+  section
+    .container.text-center.pt-5
+      .sg-homepage__main-image.sg-fancy-frame
+        img.rounded(src="http://placehold.it/400x300", alt="")
+      .sg-squiggle
+        img(src="build/images/squiggle.svg", alt="")
+      p.sg-homepage__hed move around
+      p.sg-homepage__dek sweetgif helps you capture your weird, wonderful moments.
+  section.sg-homepage-intro
+    .container.sg-homepage-intro__grid
+      .sg-homepage-intro__text
+        h1 sweetgif is a digital photobooth that makes sweet GIFs.
+        p sweetgif takes pictures as you move around, and then instantly stiches them together to make a GIF.
+        a.btn.btn-outline-dark.btn-lg.mr-2.mb-1(href="how-it-works.html") how it works
+        a.btn.btn-dark.btn-lg.mb-1(href="booths-index.html") see booths
+      .sg-homepage-intro__image
+        .sg-fancy-frame
+          img.rounded(src="http://placehold.it/400x300", alt="")
+  section.bg-dark-blue
+    .container
+      p.h1.text-center.text-white booths on right now
+      .sg-squiggle.mb-5
+        img(src="build/images/squiggle.svg", alt="")
+      .row
+        .col-md-3.col-sm-6.mb-4
+          +boothCard('sg-booth-card sg-booth-card--inverted')
+        .col-md-3.col-sm-6.mb-4
+          +boothCard('sg-booth-card sg-booth-card--inverted')
+        .col-md-3.col-sm-6.mb-4
+          +boothCard('sg-booth-card sg-booth-card--inverted')
+        .col-md-3.col-sm-6.mb-4
+          +boothCard('sg-booth-card sg-booth-card--inverted')
+

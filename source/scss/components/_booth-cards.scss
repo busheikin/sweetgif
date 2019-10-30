@@ -60,6 +60,14 @@
     padding-left: $spacer;
     line-height: 1;
     font-size: $font-size-sm;
-    color: transparentize($black, .5)
+    color: rgba(0,0,0,.5);
+  }
+
+  .sg-booth-card--inverted &__title {
+    color: $white;
+  }
+
+  .sg-booth-card--inverted &__icon {
+    color: rgba(255,255,255,.5);
   }
 }

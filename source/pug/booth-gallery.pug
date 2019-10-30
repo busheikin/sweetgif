@@ -1,32 +1,32 @@
 
 extends _page-template.pug
 
-block pageTitle
-  h1 Daniel's Bar Mitzvah
-  p.text-muted.mt-2
-    | Hosted by dbusheikin
-
-block pageAction
-  .sg-page-header__booth-button
-    a.btn.btn-lg.btn-primary(href="booth-mode.html")
-      i.fas.fa-camera.mr-3
-      | Enter Booth
 
 block content
-  .sg-booth-card-grid
-    +thumbnailLink
-    +thumbnailLink
-    +thumbnailLink
-    +thumbnailLink
-    
-    +thumbnailLink
-    +thumbnailLink
-    +thumbnailLink
-    +thumbnailLink
+  .container
+    .sg-page-header
+      .sg-page-header__title
+        h1 Daniel's Bar Mitzvah
+        p.text-muted.mt-2
+          | Hosted by dbusheikin
+      .sg-page-geader__action
+        a.btn.btn-lg.btn-primary(href="booth-mode.html")
+          i.fas.fa-camera.mr-3
+          | Enter Booth
+    .sg-booth-card-grid
+      +thumbnailLink
+      +thumbnailLink
+      +thumbnailLink
+      +thumbnailLink
+      
+      +thumbnailLink
+      +thumbnailLink
+      +thumbnailLink
+      +thumbnailLink
 
-    +thumbnailLink
-    +thumbnailLink
-    +thumbnailLink
-    +thumbnailLink
+      +thumbnailLink
+      +thumbnailLink
+      +thumbnailLink
+      +thumbnailLink
 
   include includes/_pagination.pug

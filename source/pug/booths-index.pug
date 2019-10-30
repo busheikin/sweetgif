@@ -1,28 +1,30 @@
 
 extends _page-template.pug
 
-block pageTitle
-  h1 Booths
-
-block pageAction
-  .sg-page-header__search
-    i(class="fas fa-2x fa-search")
-
 block content
-  .sg-booth-card-grid
-    +boothCard(isLive=true)
-    +boothCard
-    +boothCard
-    +boothCard
-    
-    +boothCard
-    +boothCard
-    +boothCard
-    +boothCard
-    
-    +boothCard
-    +boothCard
-    +boothCard
-    +boothCard
+  .container
+    .sg-page-header
+      .sg-page-header__title
+        h1 Booths
+      .sg-page-header__search.form-inline
+        label.sr-only Search
+        input.form-control(type="text" placeholder="search...")
+        button.btn.btn-link
+          i(class="fas fa-2x fa-search")
+    .sg-booth-card-grid
+      +boothCard
+      +boothCard
+      +boothCard
+      +boothCard
+      
+      +boothCard
+      +boothCard
+      +boothCard
+      +boothCard
+      
+      +boothCard
+      +boothCard
+      +boothCard
+      +boothCard
 
   include includes/_pagination.pug

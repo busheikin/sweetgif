@@ -1,4 +1,8 @@
-h1 {
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 ,.h1 {
   font-weight: $font-weight-bold;
 }
 
@@ -7,12 +11,32 @@ img {
 }
 
 .container {
-  padding-top: $spacer*4;
-  padding-bottom: $spacer*4;
+  padding-top: $spacer*6;
+  padding-bottom: $spacer*6;
 }
 
 a.disabled {
   color: $gray-300;
   cursor: not-allowed;
   pointer-events: none;
+}
+
+.sg-squiggle {
+  margin-top: $spacer*2;
+  margin-bottom: $spacer*2;
+  text-align: center;
+}
+
+.sg-fancy-frame {
+  position: relative;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 4px;
+  background: url(build/images/pattern.svg);
+  border-radius: $border-radius;   
+
+
+  & > img {
+  }
 }
