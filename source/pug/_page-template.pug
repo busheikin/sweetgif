@@ -22,7 +22,7 @@ mixin boothCard(classes='sg-booth-card', title='Title', username='Username')
       +thumbnail
       p.sg-booth-card__live-tag Live
     .sg-booth-card__text
-      h3.sg-booth-card__title= title
+      p.sg-booth-card__title= title
       p.sg-booth-card__username= username
     .sg-booth-card__icon
       i(class="fas fa-lock fa-xs")
@@ -88,31 +88,43 @@ html(lang="ru")
             .sg-navbar-toggle__icon
               i.fas.fa-bars.fa-2x
           .collapse.navbar-collapse#navMenu
-            button.btn.btn-link.sg-navbar-close-button(type="button" data-toggle="collapse" data-target="#navMenu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
-              .sg-navbar-toggle__icon
-                i.fas.fa-times.fa-2x
             ul.navbar-nav
+              button.btn.btn-link.sg-navbar-close-button(type="button" data-toggle="collapse" data-target="#navMenu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
+                .sg-navbar-toggle__icon
+                  i.fas.fa-times.fa-2x
               li.nav-item
-                a(href='#') home
+                a(href='/') home
               li.nav-item
-                a(href='#') about
+                a(href='booths-index.html') booths
               li.nav-item
-                a(href='#') link
+                a(href='how-it-works.html') how it works
               li.nav-item
+                a(href='how-it-works.html') contact
 
       block content
       
       .sg-footer
         .container
-          .sg-footer--grid
-            ul.sg-footer--list
-              li: a(href="#") About
-              li: a(href="#") How it Works
-              li: a(href="/booths-index.html") Booths
-              li: a(href="#") Contact Us
-            ul.sg-footer--list
-              li: a(href="#") Privacy Policy
-              li: a(href="#") Terms of Service
+          .row.mb-5
+            .col-6.col-md-3
+              ul.sg-footer--list
+                li: a(href="generic-page.html") About
+                li: a(href="/booths-index.html") Booths
+                li: a(href="how-it-works.html") How it Works
+                li: a(href="#") Contact Us
+            .col-6.col-sm-3
+              ul.sg-footer--list
+                li: a(href="generic-page.html") Privacy Policy
+                li: a(href="generic-page.html") Terms of Service
+          ul.sg-footer__social-icons
+            li: a(href="#")
+              img(src="http://placehold.it/40x40", alt="")
+            li: a(href="#")
+              img(src="http://placehold.it/40x40", alt="")
+            li: a(href="#")
+              img(src="http://placehold.it/40x40", alt="")
+            li @sweetgif
+          
       script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous")
       script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous")
       script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous")

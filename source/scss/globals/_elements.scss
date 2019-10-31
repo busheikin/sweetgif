@@ -2,8 +2,15 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  margin-bottom: .75rem;
+}
+
 h1 ,.h1 {
   font-weight: $font-weight-bold;
+  @include media-breakpoint-down(xs){
+    font-size: 1.75rem;
+  }
 }
 
 img {
@@ -28,7 +35,6 @@ a.disabled {
 }
 
 .sg-fancy-frame {
-  position: relative;
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
@@ -39,4 +45,16 @@ a.disabled {
 
   & > img {
   }
+}
+
+.row.row-condensed {
+  margin-left: -$grid-gutter-width/4;
+  margin-right: -$grid-gutter-width/4;
+
+  & div[class^='col'],
+  & div[class*=' col'] {
+    padding-left: $grid-gutter-width/4;
+    padding-right: $grid-gutter-width/4;
+  }
+
 }

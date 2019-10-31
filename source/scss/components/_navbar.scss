@@ -1,5 +1,5 @@
 .navbar-brand img {
-  height: 60px;
+  height: $navbar-brand-height;
 }
 
 .navbar-collapse {
@@ -11,6 +11,7 @@
   bottom: 0;  
   height: 100% !important;
   opacity: 0;
+  z-index: $zindex-navbar;
   
   &.collapse.collapsing,
   &.collapse {
@@ -19,7 +20,7 @@
   }
 
   &.collapse.show {
-    opacity: .98;
+    opacity: 1;
   }
 
 }
@@ -35,13 +36,21 @@
   font-weight: $font-weight-bold;
   text-align: center;
 
+  @include media-breakpoint-down(xs){
+    font-size: $h4-font-size;
+  }
+
   a{
     color: $primary;
   }
 }
 
 .sg-navbar-close-button {
-  float: right;
+  position: absolute;
+  top: 0;
+  right: 0;
   margin-top: $navbar-padding-y;
   margin-right: $navbar-padding-x;
+  line-height: $navbar-brand-height;
+  color: $gray-600;
 }

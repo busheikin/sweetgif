@@ -41,16 +41,6 @@
 		"oAP": "/booths.html",
 		"oF": 0
 		},
-	"/build/css/style.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/build/css/style-min.css",
-		"oF": 0,
-		"oS": 3
-		},
 	"/build/fonts/GT-America-Expanded-Black.ttf": {
 		"cB": 0,
 		"ft": 8192,
@@ -73,14 +63,6 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/build/fonts/GT-America-Expanded-Black.woff2",
-		"oF": 0
-		},
-	"/build/html/index.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/build/html/index.html",
 		"oF": 0
 		},
 	"/build/images/logo.svg": {
@@ -112,6 +94,14 @@
 		"opt": 0,
 		"plM": 52780316221407,
 		"prP": 0
+		},
+	"/generic-page.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/generic-page.html",
+		"oF": 0
 		},
 	"/gif-single.html": {
 		"cB": 0,
@@ -202,6 +192,16 @@
 		"oA": 0,
 		"oAP": "/source/pug/build/html/index.html",
 		"oF": 0
+		},
+	"/source/pug/generic-page.pug": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/generic-page.html",
+		"oF": 0,
+		"oS": 0
 		},
 	"/source/pug/gif-single.pug": {
 		"cB": 0,

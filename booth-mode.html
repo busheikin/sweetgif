@@ -42,13 +42,12 @@
   <body>
     <div class="sg-booth-container">
       <div class="sg-booth-background"></div>
-      <div class="sg-booth-actions">
-        <button class="btn btn-light btn-lg"> <i class="fas fa-question mr-3"></i>Help</button>
-        <button class="btn btn-light btn-lg"> <i class="fas fa-cog mr-3"></i>Settings</button>
-        <button class="btn btn-light btn-lg"> <i class="fas fa-th mr-3"></i>Gallery</button>
-      </div>
       <div class="sg-booth-instruction">
-        <p class="h1 text-center">start moving!</p>
+        <p class="h1 text-center text-white">start moving!</p>
+      </div>
+      <div class="sg-booth-actions">
+        <button class="btn btn-light btn-lg" type="button" data-toggle="modal" data-target="#helpModal"><i class="fas fa-question mr-3"></i>Help</button>
+        <button class="btn btn-light btn-lg"> <i class="fas fa-cog mr-3"></i>Settings</button><a class="btn btn-light btn-lg" href="booth-gallery.html"><i class="fas fa-th mr-3"></i>Gallery</a>
       </div>
       <div class="sg-booth-counter"><span>3</span></div>
       <div class="sg-booth__start-button">
@@ -56,6 +55,18 @@
       </div>
       <div class="sg-booth-timer">
         <div class="sg-booth-timer__fill"></div>
+      </div>
+    </div>
+    <!-- Help Modal-->
+    <div class="modal fade" id="helpModal" tabindex="-1" role="dialog" aria-labelledby="helpModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="helpModalLabel">Need a hand?</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+          </div>
+          <div class="modal-body">Just hit the start button and start moving! You'll have 10 seconds as we take a bunch of photos of you. Then we'll stitch them together into a moving GIF, and immediately upload it for you to see and share. It'll be fun, we promise.</div>
+        </div>
       </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

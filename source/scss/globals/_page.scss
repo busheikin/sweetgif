@@ -12,7 +12,10 @@
   }
 
   &__title > h1 {
-    margin-bottom: 0;
     line-height: 1;
+  }
+
+  &__action {
+    padding-left: $grid-gutter-width;
   }
 }
