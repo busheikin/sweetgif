@@ -35,7 +35,7 @@
     text-decoration: none;
 
     & img {
-      opacity: $thumbnail-link-hover-opacity;
+      opacity: $image-link-hover-opacity;
     }
   }
 
@@ -57,7 +57,7 @@
   }
 
   &__icon {
-    padding-left: $spacer;
+    margin-left: $spacer;
     line-height: 1;
     font-size: $font-size-sm;
     color: rgba(0,0,0,.5);

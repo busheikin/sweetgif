@@ -65,6 +65,36 @@
 		"oAP": "/build/fonts/GT-America-Expanded-Black.woff2",
 		"oF": 0
 		},
+	"/build/images/icon-facebook.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/build/images/icon-facebook.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/build/images/icon-instagram.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/build/images/icon-instagram.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/build/images/icon-twitter.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/build/images/icon-twitter.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
 	"/build/images/logo.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -1471,6 +1501,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/_pagination.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/source/scss/components/_tooltip.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/_tooltip.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

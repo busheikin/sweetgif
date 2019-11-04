@@ -6,7 +6,7 @@
 
 .sg-gif-thumbnail {
   &:hover img {
-    opacity: $thumbnail-link-hover-opacity;
+    opacity: $image-link-hover-opacity;
   }
 }
 
@@ -42,7 +42,7 @@
 
     @include hover-focus-active {
       img {
-        opacity: $thumbnail-link-hover-opacity;
+        opacity: $image-link-hover-opacity;
       }
     }
   }
@@ -76,6 +76,15 @@
     
     & .sg-share-social-links {
       margin-bottom: 1rem;
+      
+      &__icon {
+        height: 40px;
+        width: 40px;
+      }
+
+      &__icon:hover {
+        opacity: $image-link-hover-opacity;
+      }
     }
     
     & .sg-share-social-links > a > img {

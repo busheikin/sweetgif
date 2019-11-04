@@ -3,11 +3,11 @@ extends _page-template.pug
 
 block content
   .container 
-    .text-center.mb-4
+    .text-center.mb-5
       h1
         span.sg-gif-page__heading A sweetgif from
         br
-        a.sg-gif-page__booth-name(href="booth-gallery.html") Daniel's Bar Mitzvah
+        span Daniel's Bar Mitzvah
     .sg-gif-single__grid
       a.sg-gif-single__prev-gif.sg-alt-link-style(href="#")
           +thumbnail
@@ -25,14 +25,14 @@ block content
         i.fas.fa-th.fa-2x
         span Gallery
       .sg-gif-single__social-share
-        h2 Share this work of art:
+        h3 Share this work of art:
         .sg-share-social-links
           a(href="#")
-            img(src="http://placehold.it/40x40", alt="")
+            img.sg-share-social-links__icon(src="build/images/icon-twitter.svg ", alt="Share this on Twitter")
           a(href="#")
-            img(src="http://placehold.it/40x40", alt="")
+            img.sg-share-social-links__icon(src="build/images/icon-facebook.svg", alt="Share this on Facebook")
           a(href="#")
-            img(src="http://placehold.it/40x40", alt="")
+            img.sg-share-social-links__icon(src="build/images/icon-instagram.svg ", alt="Share this on Instagram")
         .sg-share-url
           .sg-share-url__url
             span https://sweetgif.com/whatever
