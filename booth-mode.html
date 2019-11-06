@@ -47,7 +47,7 @@
       </div>
       <div class="sg-booth-actions">
         <button class="btn btn-light btn-lg" type="button" data-toggle="modal" data-target="#helpModal"><i class="fas fa-question mr-3"></i>Help</button>
-        <button class="btn btn-light btn-lg"> <i class="fas fa-cog mr-3"></i>Settings</button><a class="btn btn-light btn-lg" href="booth-gallery.html"><i class="fas fa-th mr-3"></i>Gallery</a>
+        <button class="btn btn-light btn-lg" type="button" data-toggle="modal" data-target="#settingsModal"><i class="fas fa-cog mr-3"></i>Settings</button><a class="btn btn-light btn-lg" href="booth-gallery.html"><i class="fas fa-th mr-3"></i>Gallery</a>
       </div>
       <div class="sg-booth-counter"><span>3</span></div>
       <div class="sg-booth__start-button">
@@ -66,6 +66,107 @@
             <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
           </div>
           <div class="modal-body">Just hit the start button and start moving! You'll have 10 seconds as we take a bunch of photos of you. Then we'll stitch them together into a moving GIF, and immediately upload it for you to see and share. It'll be fun, we promise.</div>
+        </div>
+      </div>
+    </div>
+    <!-- Settings Modal-->
+    <div class="modal fade" id="settingsModal" tabindex="-1" role="dialog" aria-labelledby="helpModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="helpModalLabel">Settings</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group row mb-4">
+                <label class="col-4 font-weight-bold text-right sg-line-height-sm">Preset</label>
+                <div class="col-8">
+                  <div class="custom-control custom-radio sg-bigger-radio">
+                    <input class="custom-control-input" id="preset_0" name="preset" type="radio" value="slow">
+                    <label class="custom-control-label" for="preset_0">Slow and Smooth</label>
+                  </div>
+                  <div class="custom-control custom-radio sg-bigger-radio">
+                    <input class="custom-control-input" id="preset_1" name="preset" type="radio" value="fast">
+                    <label class="custom-control-label" for="preset_1">Fast and Jumpy</label>
+                  </div>
+                  <div class="custom-control custom-radio sg-bigger-radio">
+                    <input class="custom-control-input" id="preset_2" name="preset" type="radio" value="custom">
+                    <label class="custom-control-label" for="preset_2">Custom</label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row mb-4 align-items-center">
+                <label class="col-4 font-weight-bold text-right sg-line-height-sm">Number of pictures</label>
+                <div class="col-8">
+                  <div class="sg-fancy-radios">
+                    <div class="sg-fancy-radios__radio">
+                      <input id="pictures-count_0" name="pictures-count" type="radio" value="5">
+                      <label for="pictures-count_0">5</label>
+                    </div>
+                    <div class="sg-fancy-radios__radio">
+                      <input id="pictures-count_1" name="pictures-count" type="radio" value="10">
+                      <label for="pictures-count_1">10</label>
+                    </div>
+                    <div class="sg-fancy-radios__radio">
+                      <input id="pictures-count_2" name="pictures-count" type="radio" value="15">
+                      <label for="pictures-count_2">15</label>
+                    </div>
+                    <div class="sg-fancy-radios__radio">
+                      <input id="pictures-count_3" name="pictures-count" type="radio" value="20">
+                      <label for="pictures-count_3">20</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row mb-4 align-items-center">
+                <label class="col-4 text-right sg-line-height-sm"><span class="font-weight-bold">Time between pictures</span><br><small class="text-muted">(seconds)</small></label>
+                <div class="col-8 sg-fancy-radios">
+                  <div class="sg-fancy-radios__radio">
+                    <input id="radio_0" name="radio" type="radio" value="100">
+                    <label for="radio_0">0.1</label>
+                  </div>
+                  <div class="sg-fancy-radios__radio">
+                    <input id="radio_1" name="radio" type="radio" value="200">
+                    <label for="radio_1">0.2</label>
+                  </div>
+                  <div class="sg-fancy-radios__radio">
+                    <input id="radio_2" name="radio" type="radio" value="500">
+                    <label for="radio_2">0.5</label>
+                  </div>
+                  <div class="sg-fancy-radios__radio">
+                    <input id="radio_3" name="radio" type="radio" value="1000">
+                    <label for="radio_3">1</label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row mb-4 align-items-center">
+                <label class="col-4 font-weight-bold text-right sg-line-height-sm">GIF frame rate</label>
+                <div class="col-8 sg-fancy-radios">
+                  <div class="sg-fancy-radios__radio">
+                    <input id="frame-rate_0" name="frame-rate" type="radio" value="2">
+                    <label for="frame-rate_0">2</label>
+                  </div>
+                  <div class="sg-fancy-radios__radio">
+                    <input id="frame-rate_1" name="frame-rate" type="radio" value="4">
+                    <label for="frame-rate_1">4</label>
+                  </div>
+                  <div class="sg-fancy-radios__radio">
+                    <input id="frame-rate_2" name="frame-rate" type="radio" value="10">
+                    <label for="frame-rate_2">10</label>
+                  </div>
+                  <div class="sg-fancy-radios__radio">
+                    <input id="frame-rate_3" name="frame-rate" type="radio" value="20">
+                    <label for="frame-rate_3">20</label>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <div class="d-flex justify-content-end">
+              <button class="btn btn-default">Cancel</button>
+              <button class="btn btn-primary">Save</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>

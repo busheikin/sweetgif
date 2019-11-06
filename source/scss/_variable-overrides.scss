@@ -74,3 +74,10 @@ $modal-inner-padding:               1rem 3rem 3rem;
 $modal-header-padding-x:            3rem;
 $modal-header-padding-y:            2rem;
 $modal-header-border-color:         transparent;
+
+// Forms
+$custom-control-indicator-size:                   1.2rem;
+$custom-control-indicator-checked-color:          $yellow;
+$custom-control-indicator-checked-bg:             $yellow;
+$custom-control-indicator-checked-border-color:   darken($yellow,20%);
+$custom-control-indicator-active-bg:              lighten($yellow,20%);
