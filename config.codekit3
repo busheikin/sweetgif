@@ -65,6 +65,22 @@
 		"oAP": "/build/fonts/GT-America-Expanded-Black.woff2",
 		"oF": 0
 		},
+	"/build/images/gifsample.gif": {
+		"ft": 4194304,
+		"iS": 967891,
+		"oA": 0,
+		"oAP": "/build/images/gifsample.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"/build/images/gifsample2.gif": {
+		"ft": 4194304,
+		"iS": 683460,
+		"oA": 0,
+		"oAP": "/build/images/gifsample2.gif",
+		"oF": 0,
+		"opt": 0
+		},
 	"/build/images/icon-facebook.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -1592,6 +1608,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/_home.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/source/scss/pages/_how-it-works.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/_how-it-works.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

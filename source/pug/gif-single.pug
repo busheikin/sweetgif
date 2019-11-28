@@ -2,7 +2,7 @@
 extends _page-template.pug
 
 block content
-  .container 
+  .container.pt-0
     .text-center.mb-5
       h1
         span.sg-gif-page__heading A sweetgif from
@@ -15,7 +15,7 @@ block content
             i.fas.fa-xs.fa-arrow-left.mr-1
             | Previous
       .sg-gif-single__main-gif
-        img.rounded(src="http://placehold.it/800x600" alt="")
+        img.rounded(src="build/images/gifsample.gif" alt="")
       a.sg-gif-single__next-gif.sg-alt-link-style(href="#")
           +thumbnail
           span

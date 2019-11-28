@@ -5668,6 +5668,11 @@ a.disabled {
   margin-top: auto;
   margin-bottom: auto; }
 
+.sg-gif-single__main-gif {
+  width: 100%; }
+  .sg-gif-single__main-gif > img {
+    width: 100%; }
+
 .sg-gif-single__prev-gif, .sg-gif-single__next-gif {
   text-align: center;
   text-transform: lowercase;
@@ -5917,6 +5922,17 @@ a.disabled {
     .sg-homepage__dek {
       font-size: 2rem; } }
 
+.sg-homepage__main-image {
+  width: 400px;
+  height: 300px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .sg-homepage__main-image > img {
+    width: 100%;
+    height: auto; }
+
 .sg-homepage-intro {
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -5932,6 +5948,10 @@ a.disabled {
   @media (max-width: 767.98px) {
     .sg-homepage-intro__image {
       display: none; } }
+
+.faqs dd {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.8); }
 
 .placeholder {
   border: 1px dashed blue;

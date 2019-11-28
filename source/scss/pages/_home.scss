@@ -1,20 +1,36 @@
-.sg-homepage__hed {
-  font-family: $headings-font-family;
-  font-size: 3rem;
-  line-height: $headings-line-height;
-  @include media-breakpoint-up(md){
-    font-size: 4rem;
+.sg-homepage {
+  &__hed {
+    font-family: $headings-font-family;
+    font-size: 3rem;
+    line-height: $headings-line-height;
+    @include media-breakpoint-up(md){
+      font-size: 4rem;
+    }
   }
-}
 
-.sg-homepage__dek {
-  font-size: 1.5rem;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  line-height: 1;
-  @include media-breakpoint-up(md){
-    font-size: 2rem;
+  &__dek {
+    font-size: 1.5rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1;
+      @include media-breakpoint-up(md){
+        font-size: 2rem;
+      }
+    }
+
+  &__main-image {
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & > img {
+      width: 100%;
+      height: auto;
+    }
   }
 }
 
