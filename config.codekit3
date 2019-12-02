@@ -41,20 +41,46 @@
 		"oAP": "/booths.html",
 		"oF": 0
 		},
-	"/build/fonts/leaguespartan-bold-webfont.woff": {
+	"/build/fonts/leaguespartan-bold.eot": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/build/fonts/leaguespartan-bold-webfont.woff",
+		"oAP": "/build/fonts/leaguespartan-bold.eot",
 		"oF": 0
 		},
-	"/build/fonts/leaguespartan-bold-webfont.woff2": {
+	"/build/fonts/leaguespartan-bold.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/build/fonts/leaguespartan-bold.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 52780316221407,
+		"prP": 0
+		},
+	"/build/fonts/leaguespartan-bold.ttf": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/build/fonts/leaguespartan-bold-webfont.woff2",
+		"oAP": "/build/fonts/leaguespartan-bold.ttf",
+		"oF": 0
+		},
+	"/build/fonts/leaguespartan-bold.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/fonts/leaguespartan-bold.woff",
+		"oF": 0
+		},
+	"/build/fonts/leaguespartan-bold.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/fonts/leaguespartan-bold.woff2",
 		"oF": 0
 		},
 	"/build/images/gifsample.gif": {
