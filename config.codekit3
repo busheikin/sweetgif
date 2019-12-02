@@ -41,28 +41,20 @@
 		"oAP": "/booths.html",
 		"oF": 0
 		},
-	"/build/fonts/GT-America-Expanded-Black.ttf": {
+	"/build/fonts/leaguespartan-bold-webfont.woff": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/build/fonts/GT-America-Expanded-Black.ttf",
+		"oAP": "/build/fonts/leaguespartan-bold-webfont.woff",
 		"oF": 0
 		},
-	"/build/fonts/GT-America-Expanded-Black.woff": {
+	"/build/fonts/leaguespartan-bold-webfont.woff2": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/build/fonts/GT-America-Expanded-Black.woff",
-		"oF": 0
-		},
-	"/build/fonts/GT-America-Expanded-Black.woff2": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/build/fonts/GT-America-Expanded-Black.woff2",
+		"oAP": "/build/fonts/leaguespartan-bold-webfont.woff2",
 		"oF": 0
 		},
 	"/build/images/gifsample.gif": {
