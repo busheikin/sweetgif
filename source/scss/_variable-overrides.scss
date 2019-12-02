@@ -29,12 +29,12 @@ $container-max-widths: (sm: 540px, md: 920px, lg: 928px, xl: 1024px );
 // Typography
 @font-face {
   font-family: 'League Spartan';
-  src: url('./build/fonts/leaguespartan-bold.eot');
-  src: url('./build/fonts/leaguespartan-bold.eot?#iefix') format('embedded-opentype'),
-       url('./build/fonts/leaguespartan-bold.woff2') format('woff2'),
-       url('./build/fonts/leaguespartan-bold.woff') format('woff'),
-       url('./build/fonts/leaguespartan-bold.ttf') format('truetype'),
-       url('./build/fonts/leaguespartan-bold.svg#league_spartanbold') format('svg');
+  src: url('build/fonts/leaguespartan-bold.eot');
+  src: url('build/fonts/leaguespartan-bold.eot?#iefix') format('embedded-opentype'),
+       url('build/fonts/leaguespartan-bold.woff2') format('woff2'),
+       url('build/fonts/leaguespartan-bold.woff') format('woff'),
+       url('build/fonts/leaguespartan-bold.ttf') format('truetype'),
+       url('build/fonts/leaguespartan-bold.svg#league_spartanbold') format('svg');
   font-weight: bold;
   font-style: normal;
 

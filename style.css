@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=DM+Sans:400,700&display=swap");
 @font-face {
   font-family: 'League Spartan';
-  src: url("./build/fonts/leaguespartan-bold.eot");
-  src: url("./build/fonts/leaguespartan-bold.eot?#iefix") format("embedded-opentype"), url("./build/fonts/leaguespartan-bold.woff2") format("woff2"), url("./build/fonts/leaguespartan-bold.woff") format("woff"), url("./build/fonts/leaguespartan-bold.ttf") format("truetype"), url("./build/fonts/leaguespartan-bold.svg#league_spartanbold") format("svg");
+  src: url("build/fonts/leaguespartan-bold.eot");
+  src: url("build/fonts/leaguespartan-bold.eot?#iefix") format("embedded-opentype"), url("build/fonts/leaguespartan-bold.woff2") format("woff2"), url("build/fonts/leaguespartan-bold.woff") format("woff"), url("build/fonts/leaguespartan-bold.ttf") format("truetype"), url("build/fonts/leaguespartan-bold.svg#league_spartanbold") format("svg");
   font-weight: bold;
   font-style: normal; }
 
